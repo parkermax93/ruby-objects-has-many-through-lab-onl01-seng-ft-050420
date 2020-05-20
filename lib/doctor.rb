@@ -14,8 +14,8 @@ class Doctor
     @@all
   end
   
-  def new_appointment
-    #takes in date and patient class to create a new appointment, belongs to dr. 
+  def new_appointment(doctor, date)
+    Appointment.new(self, date, doctor)
   end
   
   def appointments 
