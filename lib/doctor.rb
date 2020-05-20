@@ -25,6 +25,8 @@ class Doctor
   end
   
   def patients 
-    #collects the patient that belongs to each appt. iterates over all dr appts. 
+    appointments.map do |appointment|
+      appointment.patients
+    end
   end
 end
